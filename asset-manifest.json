@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/www.neilkardan.com/static/css/main.7f6663bd.css",
-    "main.js": "/www.neilkardan.com/static/js/main.f2478c02.js",
-    "static/js/787.b9291bdc.chunk.js": "/www.neilkardan.com/static/js/787.b9291bdc.chunk.js",
-    "static/media/coverImg.png": "/www.neilkardan.com/static/media/coverImg.f554401d00f046ba6d31.png",
-    "static/media/coverImg.jpg": "/www.neilkardan.com/static/media/coverImg.75bb126cd5113edd5bb6.jpg",
-    "static/media/BebasNeue.woff": "/www.neilkardan.com/static/media/BebasNeue.5a07e1f794625996858f.woff",
-    "index.html": "/www.neilkardan.com/index.html",
-    "main.7f6663bd.css.map": "/www.neilkardan.com/static/css/main.7f6663bd.css.map",
-    "main.f2478c02.js.map": "/www.neilkardan.com/static/js/main.f2478c02.js.map",
-    "787.b9291bdc.chunk.js.map": "/www.neilkardan.com/static/js/787.b9291bdc.chunk.js.map"
+    "main.css": "/static/css/main.d9af4fad.css",
+    "main.js": "/static/js/main.1a80c03a.js",
+    "static/js/787.b9291bdc.chunk.js": "/static/js/787.b9291bdc.chunk.js",
+    "static/media/coverImg.png": "/static/media/coverImg.f554401d00f046ba6d31.png",
+    "static/media/coverImg.jpg": "/static/media/coverImg.75bb126cd5113edd5bb6.jpg",
+    "static/media/BebasNeue.woff": "/static/media/BebasNeue.5a07e1f794625996858f.woff",
+    "index.html": "/index.html",
+    "main.d9af4fad.css.map": "/static/css/main.d9af4fad.css.map",
+    "main.1a80c03a.js.map": "/static/js/main.1a80c03a.js.map",
+    "787.b9291bdc.chunk.js.map": "/static/js/787.b9291bdc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f6663bd.css",
-    "static/js/main.f2478c02.js"
+    "static/css/main.d9af4fad.css",
+    "static/js/main.1a80c03a.js"
   ]
 }
