@@ -76,3 +76,9 @@
   color: #40B4CC;
   filter: drop-shadow(0px 1px 1px #272727)
 }
+.App .project
+{
+  font-size:28px;
+  color: #4BD6F2;
+  filter: drop-shadow(0px 0px 0px)
+}

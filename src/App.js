@@ -19,6 +19,16 @@ function App() {
         <div className="headcard">
           Projects
         </div>
+          <div className="project">
+
+              <div className="projectIcon">
+                  BruinSource
+              </div>
+              <div className="projectDescription">
+                  A platform for students to join and collaborate on OpenSource projects within their interests,
+                  experience, and skillsets. 
+              </div>
+        </div>
     </div>
 
   );
