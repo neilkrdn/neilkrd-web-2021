@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/neilkrdn-deploy/static/css/main.3c987f89.css",
+    "main.css": "/neilkrdn-deploy/static/css/main.789f0fc1.css",
     "main.js": "/neilkrdn-deploy/static/js/main.87754c83.js",
     "static/js/787.b9291bdc.chunk.js": "/neilkrdn-deploy/static/js/787.b9291bdc.chunk.js",
     "static/media/coverImg.png": "/neilkrdn-deploy/static/media/coverImg.f554401d00f046ba6d31.png",
     "static/media/coverImg.jpg": "/neilkrdn-deploy/static/media/coverImg.75bb126cd5113edd5bb6.jpg",
     "static/media/BebasNeue.woff": "/neilkrdn-deploy/static/media/BebasNeue.5a07e1f794625996858f.woff",
     "index.html": "/neilkrdn-deploy/index.html",
-    "main.3c987f89.css.map": "/neilkrdn-deploy/static/css/main.3c987f89.css.map",
+    "main.789f0fc1.css.map": "/neilkrdn-deploy/static/css/main.789f0fc1.css.map",
     "main.87754c83.js.map": "/neilkrdn-deploy/static/js/main.87754c83.js.map",
     "787.b9291bdc.chunk.js.map": "/neilkrdn-deploy/static/js/787.b9291bdc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c987f89.css",
+    "static/css/main.789f0fc1.css",
     "static/js/main.87754c83.js"
   ]
 }
