@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.d9af4fad.css",
-    "main.js": "/static/js/main.1a80c03a.js",
+    "main.css": "/static/css/main.8c6d7d16.css",
+    "main.js": "/static/js/main.825b5dc3.js",
     "static/js/787.b9291bdc.chunk.js": "/static/js/787.b9291bdc.chunk.js",
     "static/media/coverImg.png": "/static/media/coverImg.f554401d00f046ba6d31.png",
     "static/media/coverImg.jpg": "/static/media/coverImg.75bb126cd5113edd5bb6.jpg",
+    "static/media/bruinsource_logo.png": "/static/media/bruinsource_logo.ce805fef541cb2f09393.png",
     "static/media/BebasNeue.woff": "/static/media/BebasNeue.5a07e1f794625996858f.woff",
+    "static/media/github.png": "/static/media/github.268cb8cf859d662d6794.png",
     "index.html": "/index.html",
-    "main.d9af4fad.css.map": "/static/css/main.d9af4fad.css.map",
-    "main.1a80c03a.js.map": "/static/js/main.1a80c03a.js.map",
+    "main.8c6d7d16.css.map": "/static/css/main.8c6d7d16.css.map",
+    "main.825b5dc3.js.map": "/static/js/main.825b5dc3.js.map",
     "787.b9291bdc.chunk.js.map": "/static/js/787.b9291bdc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9af4fad.css",
-    "static/js/main.1a80c03a.js"
+    "static/css/main.8c6d7d16.css",
+    "static/js/main.825b5dc3.js"
   ]
 }
