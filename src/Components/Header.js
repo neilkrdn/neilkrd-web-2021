@@ -12,7 +12,7 @@ const Header = (props) => {
     return (
         <React.Fragment>
                 <Box>
-                    <AppBar position="static" style={{ background: "#272727" }}>
+                    <AppBar position="fixed" style={{ background: "#272727" }}>
                         <Toolbar>
                             <Button style={{ marginRight: '3em'}} color="inherit" fontFamily="inherit">Home</Button>
                             <Button style={{ marginRight: '3em' }} color="inherit" fontFamily="inherit">Projects</Button>
