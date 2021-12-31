@@ -1,0 +1,23 @@
+.Blog .blog
+{
+    font-family: BebasNeueRegular;
+    width: 100%;
+    padding-top: 105px;
+}
+.Blog .box2
+{
+  width: 100%;
+  margin-top: 105px;
+  height: 20%;
+  background-color: #272727;
+  filter: drop-shadow(0px 4px 4px #AFAFAF)
+}
+.Blog .headcard
+{
+  width: 12.5%;
+  height: 5%;
+  margin: 10%;
+  font-size: 96px;
+  color: #4BD6F2;
+  filter: drop-shadow(0px 4px 2px #000000)
+}

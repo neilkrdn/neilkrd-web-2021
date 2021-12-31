@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import { createTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import BebasNeueRegularWoff from '../Fonts/BebasNeue.woff';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Header = (props) => {
     return (
@@ -14,10 +15,10 @@ const Header = (props) => {
                 <Box>
                     <AppBar position="fixed" style={{ background: "#272727" }}>
                         <Toolbar>
-                            <Button style={{ marginRight: '3em'}} color="inherit" fontFamily="inherit">Home</Button>
-                            <Button style={{ marginRight: '3em' }} color="inherit" fontFamily="inherit">Projects</Button>
-                            <Button style={{ marginRight: '3em' }} color="inherit" fontFamily="inherit">Blog</Button>
-                            <Button style={{ marginRight: '3em' }} color="inherit" fontFamily="inherit">About</Button>
+                            <Button style={{ marginRight: '3em'}} color="inherit" fontFamily="inherit"><a href="#home" target="_self">Home</a></Button>
+                            <Button style={{ marginRight: '3em' }} color="inherit" fontFamily="inherit"><a href="#projects" target="_self">Projects</a></Button>
+                            <Button style={{ marginRight: '3em' }} color="inherit" fontFamily="inherit"><a href="#blog" target="_self">Blog</a></Button>
+                            <Button style={{ marginRight: '3em' }} color="inherit" fontFamily="inherit"><a href="#about" target="_self">about</a></Button>
                         </Toolbar>
                     </AppBar>
                 </Box>
@@ -25,4 +26,4 @@ const Header = (props) => {
     )
 }
 
-export default Header
+export default Header;

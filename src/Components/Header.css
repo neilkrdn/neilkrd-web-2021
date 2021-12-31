@@ -14,3 +14,9 @@
     font-family:'Bebas Neue', BebasNeueRegular, serif;
     color: #FFFFFF;
 }
+a
+{
+    font-size: 24px; 
+    color: white;
+    text-decoration: none;
+}
