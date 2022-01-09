@@ -1,13 +1,16 @@
 import './Blog.css'
+import BlogPost from './BlogPost.js'
 function Blog() {
     return (
-        <div className="blog" id="blog">
+        <div className="Blog" id="blog">
             <div className="box2">
                 <div className="headcard">
                     Blog
                 </div>
             </div>
-            <p> Coming soon </p>
+            <div className="MostRecent">
+                <BlogPost />
+            </div>
          </div>
     )
 }

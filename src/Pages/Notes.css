@@ -1,0 +1,24 @@
+.Notes .Head
+{
+    padding-top: 105px;
+    font-family: myFont;
+    text-align: center;
+    font-size: 64px;
+    color: #272727
+}
+
+.Notes .Subhead
+{
+    text-align: center;
+    font-family: myFont;
+    font-weight:100;
+    font-size: 28px;
+    color: #727272
+}
+
+.Notes .NoteList
+{
+    font-family: myFont;
+    text-align: center;
+    padding: 25px;
+}

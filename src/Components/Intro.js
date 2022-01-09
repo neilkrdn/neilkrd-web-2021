@@ -1,8 +1,9 @@
+import './Intro.css'
 
 function Intro()
 {
     return (
-        <div className="intro" id="home">
+        <div className="Intro" id="home">
           <div className="box">
               <div className="tagline">
               Neil Kardan

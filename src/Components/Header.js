@@ -18,7 +18,8 @@ const Header = (props) => {
                             <Button style={{ marginRight: '3em'}} color="inherit" fontFamily="inherit"><a href="#home" target="_self">Home</a></Button>
                             <Button style={{ marginRight: '3em' }} color="inherit" fontFamily="inherit"><a href="#projects" target="_self">Projects</a></Button>
                             <Button style={{ marginRight: '3em' }} color="inherit" fontFamily="inherit"><a href="#blog" target="_self">Blog</a></Button>
-                            <Button style={{ marginRight: '3em' }} color="inherit" fontFamily="inherit"><a href="#about" target="_self">about</a></Button>
+                            <Button style={{ marginRight: '3em' }} color="inherit" fontFamily="inherit"><a href="#about" target="_self">About</a></Button>
+                       {/*    <Button style={{ justifyContent: "flex-end", alignItems: "flex-end"}} color="inherit" fontFamily="inherit"><a href="login" target="_self" >Login</a></Button>*/} 
                         </Toolbar>
                     </AppBar>
                 </Box>

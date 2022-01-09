@@ -1,4 +1,4 @@
-
+import './Projects.css';
 
 function Projects()
 {

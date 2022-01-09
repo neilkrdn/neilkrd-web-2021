@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Blog from './Pages/Blog.js'
+import Notes from './Pages/Notes.js'
+import BlogPostCreation from './Pages/BlogPostCreation.js'
 
 ReactDOM.render(
   <React.StrictMode>
