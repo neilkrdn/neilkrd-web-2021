@@ -48,7 +48,7 @@ class Blog extends Component
                     key={i}
                     title={tempPost.title}
                     subtitle={tempPost.subtitle}
-                    description={tempPost.description}
+                    description={tempPost.description.substring(0, tempPost.description.indexOf('\n'))}
                     signature={tempPost.signature}
                     read={tempPost.read}
                     write={tempPost.write}

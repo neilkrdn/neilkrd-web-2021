@@ -17,6 +17,10 @@
   width: 75%;
   margin: auto;
   padding-top: 3rem;
+    /* "transparent" only works here because == rgba(0,0,0,0) */
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, #000000, transparent);
 }
 .Blog .headcard
 {
@@ -42,6 +46,7 @@ button
   margin-bottom: -1.5625rem;
   font-family: myFont;
   filter: drop-shadow(0px 2px 4px #2F2F2F);
+  position: relative;
 }
 img
 {
