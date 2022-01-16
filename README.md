@@ -8,13 +8,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Currently being worked on.
 
 ## TODO
-- [X] Add anchors to header
 - [ ] Optimize UI for mobile and smaller screens
+- [X] Added separate blog page
+- [X] Integrated firebase to store blog posts
+- [X] Fixed CSS to use rem/ems
+- [X] Added blog preview
+- [X] Looping blog posts
+- [X] Add anchors to header
 - [X] Add other site content (like what is displayed in
 - [X] Add about section
-- [ ] Add more about section, maybe like @/msboswell's text deleting and reappearing for interests, skills, languages, etc.
+- [X] Add more about section, maybe like @/msboswell's text deleting and reappearing for interests, skills, languages, etc.
 - [X] Add blog section 
-- [ ] Implement blog section
+- [X] Implement blog section
 - [X] Add more to introduction panel
-- [ ] Lots!
 
