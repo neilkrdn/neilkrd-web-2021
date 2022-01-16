@@ -19,6 +19,7 @@ class BlogPost extends Component
             write: this.props.write
         }
     }
+
     render() {
         return (
             <div className="BlogPost">
@@ -29,7 +30,7 @@ class BlogPost extends Component
                     </div>
                 </div>
                 <p>
-                {this.state.description}
+                    <NewlineText text={this.state.description}></NewlineText>
                 </p>
                 <div className="Sign">
                 {this.state.signature}
@@ -43,5 +44,11 @@ class BlogPost extends Component
         );
     }
 }
+
+function NewlineText(props) {
+    const text = props.text;
+    const newText = text.split('\n').map(str => <p><br></br>{str}</p>);
+    return newText;
+  }
 
 export default BlogPost;

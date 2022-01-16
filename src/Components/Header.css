@@ -9,6 +9,7 @@
     font-family: myFont;
     src: url(../Fonts/BebasNeue-Regular.woff) format('woff');
 }
+
 .Header .Button
 {
 
@@ -30,4 +31,9 @@ a:hover
 .Header .right
 {
     text-align: right;
+}
+
+Link.anchor
+{
+    top: -6.5625rem;
 }

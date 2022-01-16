@@ -2,12 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import BlogPostCreation from './Pages/BlogPostCreation.js'
-import Blog from './Components/Blog.js'
+import BlogPage from './Pages/BlogPage.js'
+import Header from './Components/Header.js'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App/>} />
+        <Route path="/home" element={<App/>} />
+        <Route path="/blog" element={<BlogPage/>}/>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

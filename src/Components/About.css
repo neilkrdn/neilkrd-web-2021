@@ -1,9 +1,9 @@
 .About .aboutMe
 {
-  max-width: 540px;
-  max-height: 540px;
-  border-radius: 20px;
-  margin-top: -100px;
+  max-width: 33.75rem;
+  max-height: 33.75rem;
+  border-radius: 1.25rem;;
+  margin-top: -6.25rem;
   filter: drop-shadow(0px 2px 2px #272727);
   text-align: center;
 }
@@ -13,16 +13,16 @@
 }
 
 .left {
-  margin-left: 100px;
+  margin-left: 6.25rem;
   width: 25%;
 }
 
 .right {
   font-family: Georgia, 'Times New Roman', Times, serif;
   width: 50%;
-  padding: 30px;
-  margin-top: -30px;
-  font-size: 28px;
+  padding-left: 1.875rem;
+  margin-top: -3.5rem;
+  font-size: 1.75rem;
   text-align: left;
   margin-left: 100px;
   filter: drop-shadow(0px 1px 1px #AFAFAF)
@@ -31,9 +31,12 @@
 .About .aboutMeDescription
 {
   text-align: center;
-  font-family:'Courier New', Courier, monospace
+  font-family: 'Times New Roman', Times, serif
 }
-
+.About .row
+{
+  padding: 1.875rem;
+}
 .row:after {
   content: "";
   display: table;
@@ -47,7 +50,7 @@ img
 .About .box2
 {
   width: 100%;
-  margin-top: 105px;
+  margin-top: 6.5625;
   height: 20%;
   background-color: #272727;
   font-family: myFont;
@@ -56,11 +59,11 @@ img
 .About .headcard
 {
   width: 12.5%;
-  height: 5%;
-  margin: 10%;
-  margin-top: 5%;
-  font-size: 96px;
-  color: #4BD6F2;
+  height: 6.75rem;
+  margin: 6.75rem;
+  margin-top: 3.375rem;
+  font-size: 6rem;
+  color: #FFFFFF;
   filter: drop-shadow(0px 4px 2px #000000)
 }
 

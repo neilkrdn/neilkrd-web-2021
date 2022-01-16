@@ -3,7 +3,7 @@ import './Intro.css'
 function Intro()
 {
     return (
-        <div className="Intro" id="home">
+        <div className="Intro" id="intro">
           <div className="box">
               <div className="tagline">
               Neil Kardan
@@ -11,9 +11,9 @@ function Intro()
                   Designer | Developer | Scholar
                 </div>
               </div>
-              <img className="coverImg" src={require('../Assets/coverImg.jpg')} alt="picture of neil"/>
             
           </div>
+          <img className="coverImg" src={require('../Assets/coverImg.jpg')} alt="picture of neil"/>
         </div>
     )
 }        

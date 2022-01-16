@@ -7,6 +7,7 @@ import { getDatabase, ref, set, push, get, child} from "firebase/database";
 import firebaseApp from '../fb_db.js'
 import { Component } from 'react';
 import { render } from '@testing-library/react';
+import { Link } from "react-router-dom";
 
 
 
@@ -73,7 +74,9 @@ class Blog extends Component
                 </div>
                 <div className="toBlog">
                     <button>
+                        <Link to="/blog">
                         Keep reading...
+                        </Link>
                     </button>
                 </div>
             </div>

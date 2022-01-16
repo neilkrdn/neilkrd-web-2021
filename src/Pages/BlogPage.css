@@ -1,0 +1,102 @@
+.BlogPage .postBox
+{
+    margin: 0 auto;
+    background-color: #EFEBE6;
+}
+
+.BlogPage
+{
+    margin-top: 3.125rem;
+    background-color: #EFEBE6;
+}
+
+.BlogPage .posts
+{
+    padding: 5em;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.BlogPage .box
+{
+    width: 100%;
+    height: 20em;
+    background-color: #C7B9A8;
+    color: #000000;
+    position: static;
+    display: flex;
+    border: #645340;
+    border-style: dotted;
+    border-width: .1em;
+}
+
+.BlogPage .title
+{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 75%;
+    font-size: 7em;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.BlogPage .buttons
+{
+    position: relative;
+}
+
+.BlogPage .forwardArticle
+{
+    background-color: #645340;
+    border-radius: 0;
+    color: #EFEBE6;
+    float: right;
+    padding: .25em;
+    margin: 1em;
+    margin-top: .5em;
+    width: 4em;
+    margin-right: 0;
+
+}
+.BlogPage .backArticle
+{
+    background-color: #EFEBE6;
+    border-radius: 0;
+    color: #645340;
+    float: right;
+    padding: .25em;
+    margin: 1em;
+    margin-top: .5em;
+    margin-right: 0;
+    width: 4em;
+
+}
+
+.BlogPage .recolor
+{
+    color: #645340;
+}
+
+button
+{
+    transition: transform .1s;
+    filter: none;
+    border: #645340;
+    border-style: solid;
+    border-width: .1em;
+}
+button:hover
+{
+    transform: scale(1.1);
+}
+.BlogPage Footer
+{
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    background-color: #EFEBE6;
+}

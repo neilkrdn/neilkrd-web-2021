@@ -11,13 +11,13 @@ import Footer from "./Components/Footer.js"
 function App() {
   return (
     <div className="App">
-        <Header />
+        <Header/>
         <Intro />
         <Projects />
         <Blog />
         <About />
         <Footer />
-      </div>
+      </div> 
   );
 }
 
