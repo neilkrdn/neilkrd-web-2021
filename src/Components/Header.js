@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import { HashLink as Link } from 'react-router-hash-link';
+import { Typography } from '@mui/material';
 
 const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
@@ -23,7 +24,15 @@ const Header = (props) => {
                             <Button style={{ marginRight: '3em' }} color="inherit" fontFamily="inherit"><Link smooth scroll={el => scrollWithOffset(el)} to="/home#blog">Blog</Link></Button>
                             <Button style={{ marginRight: '3em' }} color="inherit" fontFamily="inherit"><Link smooth scroll={el => scrollWithOffset(el)} to="/home#about">About</Link></Button>
                        {/*    <Button style={{ justifyContent: "flex-end", alignItems: "flex-end"}} color="inherit" fontFamily="inherit"><a href="login" target="_self" >Login</a></Button>*/} 
+                            <Typography edge="end" align="right" sx={{ flexGrow: 1 }}>
+                                <Button fontFamily="inherit" color="inherit">
+                                    <Link to="/login">
+                                        Neil Kardan
+                                    </Link>
+                                </Button>
+                            </Typography>
                         </Toolbar>
+                        
                     </AppBar>
                 </Box>
         </React.Fragment>

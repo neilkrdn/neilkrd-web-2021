@@ -74,7 +74,7 @@ class Blog extends Component
                 </div>
                 <div className="toBlog">
                     <button>
-                        <Link to="/blog">
+                        <Link to="/blog/recentreads">
                         Keep reading...
                         </Link>
                     </button>

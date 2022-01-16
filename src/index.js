@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route} from "react-router-dom";
 import BlogPostCreation from './Pages/BlogPostCreation.js'
 import BlogPage from './Pages/BlogPage.js'
 import Header from './Components/Header.js'
+import Login from './Pages/Login.js'
 
 
 
@@ -15,7 +16,8 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App/>} />
         <Route path="/home" element={<App/>} />
-        <Route path="/blog" element={<BlogPage/>}/>
+        <Route path="/blog/recentreads" element={<BlogPage/>}/>
+        <Route path="/login" element={<Login/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

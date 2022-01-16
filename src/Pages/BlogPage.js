@@ -6,6 +6,7 @@ import { initializeApp } from 'firebase/app';
 import { getDatabase, ref, set, push, get, child} from "firebase/database";
 import firebaseApp from '../fb_db.js'
 import { render } from '@testing-library/react';
+import BlogNav from '../Components/BlogNav.js';
 import BlogPost from '../Components/BlogPost.js'
 import {HashLink as Link} from "react-router-hash-link";
 
@@ -130,6 +131,7 @@ class BlogPage extends Component
               Recent Reads
           </div>
         </div>
+        {/*<BlogNav className="blogNav"/>*/}
         <div id="top"></div>
         <div className="postBox" >
 
@@ -140,8 +142,8 @@ class BlogPage extends Component
             </div>
 
             <div className="buttons">
-              <Link smooth scroll={el => scrollWithOffset(el)} to="/blog#top"><button onClick={this.handlePostChange} className="forwardArticle">Next</button></Link>
-              <Link smooth scroll={el => scrollWithOffset(el)} to="/blog#top" className="recolor"><button onClick={this.handlePostBack} className="backArticle">Back</button></Link>
+              <Link smooth scroll={el => scrollWithOffset(el)} to="/blog/recentreads#top"><button onClick={this.handlePostChange} className="forwardArticle">Next</button></Link>
+              <Link smooth scroll={el => scrollWithOffset(el)} to="/blog/recentreads#top" className="recolor"><button onClick={this.handlePostBack} className="backArticle">Back</button></Link>
               
             </div>
           </div>
