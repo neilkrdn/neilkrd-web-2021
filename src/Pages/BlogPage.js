@@ -8,6 +8,13 @@ import firebaseApp from '../fb_db.js'
 import { render } from '@testing-library/react';
 import BlogPost from '../Components/BlogPost.js'
 import {HashLink as Link} from "react-router-hash-link";
+
+const scrollWithOffset = (el) => {
+  const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+  const yOffset = -100; 
+  window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+}
+
 class BlogPage extends Component
 {
   constructor()
@@ -119,11 +126,12 @@ class BlogPage extends Component
       <div className="BlogPage">
         <Header/>
         <div className="box">
-          <div className="title">
+          <div className="title" >
               Recent Reads
           </div>
         </div>
-        <div className="postBox" id="top">
+        <div id="top"></div>
+        <div className="postBox" >
 
           <div className="posts">
 
@@ -132,8 +140,8 @@ class BlogPage extends Component
             </div>
 
             <div className="buttons">
-              <button onClick={this.handlePostChange} className="forwardArticle"><Link to="/blog#top">Next</Link></button>
-              <button onClick={this.handlePostBack} className="backArticle"><Link to="/blog#top" className="recolor">Back</Link></button>
+              <Link smooth scroll={el => scrollWithOffset(el)} to="/blog#top"><button onClick={this.handlePostChange} className="forwardArticle">Next</button></Link>
+              <Link smooth scroll={el => scrollWithOffset(el)} to="/blog#top" className="recolor"><button onClick={this.handlePostBack} className="backArticle">Back</button></Link>
               
             </div>
           </div>
