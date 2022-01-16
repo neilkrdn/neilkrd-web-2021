@@ -8,7 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Currently being worked on.
 
 ## TODO
-- [ ] Optimize UI for mobile and smaller screens
+- [ ] Fix the header to become a "hamburger style" menu bar on smaller devices. Currently cropping on mobile. 
+- [X] Optimize UI for mobile and smaller screens
 - [X] Added separate blog page
 - [X] Integrated firebase to store blog posts
 - [X] Fixed CSS to use rem/ems
