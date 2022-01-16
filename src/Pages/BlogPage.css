@@ -12,7 +12,7 @@
 
 .BlogPage .posts
 {
-    padding: 5em;
+    padding-top: 5em;
     width: 70%;
     margin: 0 auto;
     position: relative;
@@ -26,9 +26,6 @@
     color: #000000;
     position: static;
     display: flex;
-    border: #645340;
-    border-style: dotted;
-    border-width: .1em;
 }
 
 .BlogPage .title

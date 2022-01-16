@@ -24,9 +24,8 @@
 }
 .Blog .headcard
 {
-  width: 12.5%;
+  text-align: center;
   height: 3.375rem;
-  margin: 5.625rem;
   margin-top: 3.75rem;;
   margin-bottom: 0rem;
   font-size: 6rem;
