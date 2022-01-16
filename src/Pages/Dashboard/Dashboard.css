@@ -1,0 +1,59 @@
+.Dashboard
+{
+    margin-top: 3.125rem;
+    background-color: #EFEBE6;
+}
+.Dashboard .box
+{
+    width: 100%;
+    height: 15rem;
+    background-color: #C7B9A8;
+    color: #000000;
+    position: static;
+    display: flex;
+}
+
+.Dashboard .title
+{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 75%;
+    font-size: 7em;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.Dashboard .body
+{
+    margin: 0 auto;
+    background-color: #EFEBE6;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.Dashboard .main
+{
+    padding: 2rem;
+    font-size: 4rem;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.Dashboard .buttons
+{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #EFEBE6;
+    color: #272727;
+}
