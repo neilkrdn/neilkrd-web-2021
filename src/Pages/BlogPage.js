@@ -131,7 +131,7 @@ class BlogPage extends Component
               Recent Reads
           </div>
         </div>
-        {/*<BlogNav className="blogNav"/>*/}
+        <BlogNav className="blogNav"/>
         <div id="top"></div>
         <div className="postBox" >
 

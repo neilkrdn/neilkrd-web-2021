@@ -1,0 +1,48 @@
+.ResearchBible
+{
+    margin-top: 3.125rem;
+    background-color: #EFEBE6;
+}
+
+.ResearchBible .box
+{
+    width: 100%;
+    height: 20em;
+    background-color: #C7B9A8;
+    color: #000000;
+    position: static;
+    display: flex;
+}
+
+.ResearchBible .title
+{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 75%;
+    font-size: 7em;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+.ResearchBible .body
+{
+    margin: 0 auto;
+    background-color: #EFEBE6;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.ResearchBible .main
+{
+    padding: 5rem;
+    font-size: 4rem;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}

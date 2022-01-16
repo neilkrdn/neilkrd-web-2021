@@ -7,6 +7,9 @@ import BlogPostCreation from './Pages/BlogPostCreation.js'
 import BlogPage from './Pages/BlogPage.js'
 import Header from './Components/Header.js'
 import Login from './Pages/Login.js'
+import TopReads from './Pages/Blog/TopReads.js'
+import ShowerThoughts from './Pages/Blog/ShowerThoughts.js'
+import ResearchBible from'./Pages/Blog/ResearchBible.js'
 
 
 
@@ -17,6 +20,9 @@ ReactDOM.render(
         <Route path="/" element={<App/>} />
         <Route path="/home" element={<App/>} />
         <Route path="/blog/recentreads" element={<BlogPage/>}/>
+        <Route path="/blog/topreads" element={<TopReads/>}/>
+        <Route path="/blog/showerthoughts" element={<ShowerThoughts/>}/>
+        <Route path="/blog/researchbible" element={<ResearchBible/>}/>
         <Route path="/login" element={<Login/>}/>
       </Routes>
     </BrowserRouter>
