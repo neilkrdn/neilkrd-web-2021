@@ -1,5 +1,5 @@
 import './Projects.css';
-
+import {HashLink as Link} from "react-router-hash-link";
 function Projects()
 {
     return (
@@ -14,6 +14,11 @@ function Projects()
                         <a href="https://github.com/neilkrdn/BruinSource">
                         <img className="projectLogo" src={require('../Assets/ProjectIcons/bruinsource_logo.png')} alt="bruinsource logo"/>
                         </a>
+                </div>
+                <div className="row">
+                        <Link to="/blog/recentreads">
+                        <img className="projectLogo" src={require('../Assets/ProjectIcons/recentreads.png')} alt="recentreads logo"/>
+                        </Link>
                 </div>
             </div>
         </div>
