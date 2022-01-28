@@ -1,0 +1,25 @@
+.BlankPage
+{
+    margin-top: 3.125rem;
+    background-color: #EFEBE6;
+}
+
+.BlankPage .Empty
+{
+    height: 32.5rem;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+.BlankPage .Empty button
+{
+    padding: 1rem;
+    border-radius: 0;
+    margin-top: 1rem;
+}

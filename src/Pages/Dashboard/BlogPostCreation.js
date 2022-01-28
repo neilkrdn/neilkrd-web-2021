@@ -6,6 +6,8 @@ import Header from '../../Components/Header.js';
 import React, { Component } from 'react';
 import Footer from '../../Components/Footer.js';
 import {HashLink as Link} from 'react-router-hash-link'
+import {getAuth} from "firebase/auth";
+import BlankPage from "../../Components/BlankPage.js"
 
 class BlogPostCreation extends Component
 {
@@ -59,6 +61,17 @@ class BlogPostCreation extends Component
         )
     }
     render() { 
+        const auth = getAuth();
+        console.log(auth);
+        if (auth.currentUser == null)
+        {
+            console.log("not signed in")
+            return <BlankPage/>
+        }
+        else if (auth.currentUser.email != ("neilkardan@gmail.com"))
+        {
+            return <BlankPage/>
+        }
         return (
             <div className="Creation">
                 <Header />

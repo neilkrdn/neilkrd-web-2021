@@ -3,6 +3,10 @@ import Header from '../../Components/Header.js'
 import Footer from '../../Components/Footer.js'
 import './Dashboard.css'
 import {HashLink as Link} from 'react-router-hash-link';
+import { getAuth, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import {Routes, Route} from 'react-router-dom';
+import BlankPage from '../../Components/BlankPage.js'
+
 class Dashboard extends Component
 {
     constructor()
@@ -10,6 +14,17 @@ class Dashboard extends Component
         super();
     }
     render() {
+        const auth = getAuth();
+        console.log(auth);
+        if (auth.currentUser == null)
+        {
+            console.log("not signed in")
+            return <BlankPage/>
+        }
+        else if (auth.currentUser.email != ("neilkardan@gmail.com"))
+        {
+            return <BlankPage/>
+        }
         return (
             <div className="Dashboard">
                 <Header/>

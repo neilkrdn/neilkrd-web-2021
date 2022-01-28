@@ -11,7 +11,15 @@
     background-color: #EFEBE6;
 }
 
-
+.BlogPage .recentreads
+{
+    max-width: 100%;
+    width: auto;
+    max-height: 80%;
+    height: auto;
+    margin: auto;
+    filter: drop-shadow(0px 2px 2px #272727)
+}
 .BlogPage .posts
 {
     padding-top: 5em;
@@ -32,6 +40,7 @@
 
 .BlogPage .title
 {
+    overflow: hidden;
     margin: 0 auto;
     text-align: center;
     display: flex;

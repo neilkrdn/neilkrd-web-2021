@@ -128,10 +128,10 @@ class BlogPage extends Component
         <Header/>
         <div className="box">
           <div className="title" >
-              Recent Reads
+            <img className="recentreads" src={require('../Assets/ProjectIcons/recentreads.png')} alt="recentreads logo"/>
           </div>
         </div>
-        <BlogNav className="blogNav"/>
+        {/*<BlogNav className="blogNav"/>*/}
         <div id="top"></div>
         <div className="postBox" >
 

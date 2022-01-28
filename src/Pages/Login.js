@@ -1,10 +1,12 @@
 import { Component } from 'react';
 import './Login.css'
+import React from "react";
+import ReactDOM from "react-dom";
 import Header from '../Components/Header.js'
 import Footer from '../Components/Footer.js'
 import {HashLink as Link} from "react-router-hash-link"
-
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { BrowserRouter, Route } from 'react-router-dom';
 
 class Login extends Component
 {
@@ -14,14 +16,24 @@ class Login extends Component
         this.state =
         {
             email: '',
-            password: ''
+            password: '',
+            loggedIn: false
         }
         this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.signIn = this.signIn.bind(this);
     }
-
-    handleSubmit()
+    renderDashboardButton = () => {
+        if (this.state.loggedIn)
+        {
+            console.log("dashboard button");
+            return 
+        }
+    }
+    handleSubmit(e)
     {
-        this.signIn(this.state.email, this.state.password)
+        e.preventDefault();
+        this.signIn(this.state.email, this.state.password);
     }
 
     handleChange(e) 
@@ -33,19 +45,33 @@ class Login extends Component
 
     signIn(email, password) {
         const auth = getAuth();
+        signOut(auth).then(() =>
+        {
+            console.log("signed out")
+            this.setState({ loggedIn: false })
+        })
+        .catch((error) =>
+        {
+            console.log(error);
+        })
         signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             // Signed in 
             const user = userCredential.user;
-            console.log("successfully signed in")
-            return true;
-            // ...
+            if (auth.currentUser.email == ("neilkardan@gmail.com"))
+            {
+                console.log(auth)
+                this.setState
+                ({
+                    loggedIn: true
+                })
+                this.renderDashboardButton();
+            }
         })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
             console.log(errorCode);
-            return false;
         });
     }
 
@@ -57,18 +83,20 @@ class Login extends Component
                 <div className="message">
                     <p>Hey! Are you Neil Kardan?</p>
                     <p>Prove it! Sign in here.</p>
-                    
+                    <form onSubmit={this.handleSubmit}>
                     <input
                             type="text"
                             name="email"
                             placeholder="Email..."
                             onChange={this.handleChange}
+                            value={this.state.email}
                     />
                     <input
                             type="password"
                             name="password"
                             placeholder="Password..."
                             onChange={this.handleChange}
+                            value={this.state.password}
                         />
 
                     <div className="buttons">
@@ -77,10 +105,17 @@ class Login extends Component
                                     Home
                             </button>
                         </Link>
-                        <button className="continue" onClick={this.handleSubmit()}>
+                        <button type="submit" className="continue">
                             Continue
                         </button>
+                        {this.renderDashboardButton}
                     </div>
+                    </form>
+                {(this.state.loggedIn === true) &&
+                <button>
+                    <Link to="/dashboard">Dashboard</Link>
+                    </button>
+                }
 
                 </div>
                 </div>

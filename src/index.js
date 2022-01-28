@@ -24,7 +24,7 @@ ReactDOM.render(
         <Route path="/blog/showerthoughts" element={<ShowerThoughts/>}/>
         <Route path="/blog/researchbible" element={<ResearchBible/>}/>
         <Route path="/login" element={<Login/>}/>
-        <Route path="/dashboard" element={<Dashboard/>}/>
+        <Route path="/dashboard/*" element={<Dashboard/>}/>
         <Route path="/dashboard/create/recentreads" element={<BlogPostCreation/>}/>
 
       </Routes>
